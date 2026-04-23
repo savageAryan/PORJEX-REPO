@@ -2,8 +2,33 @@
 
 [ext_resource type="Texture2D" uid="uid://8gdcgiyc4ihc" path="res://assets/Idle (32x32).png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://bdhsy2yodybnb" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://c1oq3yfiktvc6" path="res://assets/Double Jump (32x32).png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://cmey6sk7shhxb" path="res://assets/Jump (32x32).png" id="3_dqkch"]
 [ext_resource type="Texture2D" uid="uid://dvcthre0dotoo" path="res://assets/Run (32x32).png" id="3_qhqgy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pf23h"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt7fs"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wqfne"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnwbv"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -105,6 +130,29 @@ region = Rect2(352, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ujl30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31cv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pf23h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt7fs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wqfne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnwbv")
+}],
+"loop": true,
+"name": &"doube jump",
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_g2els")
 }, {
 "duration": 1.0,
@@ -202,7 +250,8 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=594067554]
 sprite_frames = SubResource("SpriteFrames_jej6c")
 animation = &"walking"
-autoplay = "idel"
+frame_progress = 0.63246644
+speed_scale = 1.555
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1540823378]
 position = Vector2(1, 2)

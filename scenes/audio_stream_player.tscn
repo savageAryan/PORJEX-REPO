@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://upf61w1n1xnh"]
+
+[ext_resource type="AudioStream" uid="uid://nhyhq260eo4e" path="res://assets/viacheslavstarostin-game-gaming-video-game-music-471936.mp3" id="1_nbeep"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=220188522]
+stream = ExtResource("1_nbeep")
+volume_db = -9.957
+autoplay = true
