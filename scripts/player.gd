@@ -18,7 +18,7 @@ func _physics_process(delta: float) -> void:
 		jump_count = 0
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and jump_count < 2:
+	if Input.is_action_just_pressed("ui_accept") and jump_count < 3:
 		
 		jump_count += 1
 	
@@ -47,9 +47,9 @@ func _physics_process(delta: float) -> void:
 		if jump_count > 1:
 			animated_sprite_2d.play("doube jump")
 			doublejump.play()
+			velocity.y += -10
 			
 			
-			JUMP_VELOCITY + 50
 		
 	
 	if direction:

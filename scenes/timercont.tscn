@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://xq558sa67ebo"]
+
+[ext_resource type="Script" uid="uid://crof8h6t1ep5s" path="res://scripts/timercont.gd" id="1_wl16o"]
+[ext_resource type="FontFile" uid="uid://bewdjikoa4u1d" path="res://assets/Inter_18pt-ExtraBold.ttf" id="2_6bjlr"]
+
+[node name="timercont" type="Control" unique_id=414087581]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wl16o")
+
+[node name="Label" type="Label" parent="." unique_id=429821699]
+layout_mode = 0
+offset_left = 14.000008
+offset_top = 169.0
+offset_right = 54.000004
+offset_bottom = 192.0
+scale = Vector2(10.026709, 9.040332)
+theme_override_fonts/font = ExtResource("2_6bjlr")
+theme_override_font_sizes/font_size = 49
+text = "dd"
+
+[node name="Timer" type="Timer" parent="." unique_id=919391813]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
