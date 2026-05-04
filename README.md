@@ -5,6 +5,11 @@ Inspired by the people of masai tribe , this is a a game made in GODOT engine fo
 * a and d = left and right
 * space or enter = jump
 
+## HOW TO PLAY??
+GO TO ----
+https://savagearyan.itch.io/tribe-jump
+CLICK RUN GAME..
+
 ## Developer notes:
 this game was another fun and silly project that i am making for resolution, its so silly even the sound effects are sill , i hope you enjoy it please play it completely any try to reach the end and also play my other games on itch.io/savage_Aryan
   
